@@ -16,7 +16,7 @@
 # include <iostream>
 
 template < typename T, typename F>
-void iter(T *array, int len, F func)
+void iter(T *array, const int len, F func)
 {
 	int i = 0;
 	while ( i < len)
