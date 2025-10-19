@@ -66,7 +66,7 @@ class Array
 				delete[] (arr);	
 		}
 
-		class Out_of_range : public std::exception
+		class OutOfRange : public std::exception
 		{
 			virtual const char	*what() const throw()
 			{
@@ -83,7 +83,7 @@ class Array
 		{
 			if(i >= size)
 			{
-				throw Out_of_range();
+				throw OutOfRange();
 				delete[] (arr);
 			}
 			return (arr[i]);

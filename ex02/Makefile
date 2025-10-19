@@ -1,4 +1,5 @@
 NAME = Array
+CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp
@@ -16,7 +17,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(DEP)
 
 fclean: clean
 	rm -f $(NAME)
@@ -24,3 +25,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
