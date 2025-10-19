@@ -2,7 +2,7 @@ NAME = Iter
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Test.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 DEP = $(OBJ:.o=.d)
 
